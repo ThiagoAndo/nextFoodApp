@@ -42,14 +42,7 @@ export default function MealDetailsPage({ params }) {
           <p className={classes.summary}>{meal.summary}</p>
         </div>
       </header>
-      <main>
-        <p
-          className={classes.instructions}
-          dangerouslySetInnerHTML={{
-            __html: meal.instructions,
-          }}
-        ></p>
-      </main>
+    
     </>
   );
 }

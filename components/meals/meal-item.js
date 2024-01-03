@@ -1,12 +1,12 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import Link from "next/link";
+import Image from "next/image";
 
-import classes from './meal-item.module.css';
+import classes from "./meal-item.module.css";
 
 export default function MealItem({ title, slug, image, summary, creator }) {
   return (
     <article className={classes.meal}>
-      <header>
+      {/* <header>
         <div className={classes.image}>
           <Image src={image} alt={title} fill />
         </div>
@@ -20,6 +20,12 @@ export default function MealItem({ title, slug, image, summary, creator }) {
         <div className={classes.actions}>
           <Link href={`/meals/${slug}`}>View Details</Link>
         </div>
+      </div> */}
+      <header>
+        <h3>This meal</h3>
+      </header>
+      <div className={classes.content}>
+        <h1>{`/meals/${slug}`}</h1>
       </div>
     </article>
   );

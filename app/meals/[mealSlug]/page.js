@@ -30,7 +30,7 @@ export default function MealDetailsPage({ params }) {
 
   return (
     <>
-      <header className={classes.header}>
+      {/* <header className={classes.header}>
         <div className={classes.image}>
           <Image src={meal.image} alt={meal.title} fill />
         </div>
@@ -42,7 +42,16 @@ export default function MealDetailsPage({ params }) {
           <p className={classes.summary}>{meal.summary}</p>
         </div>
       </header>
-    
+      <main>
+        <p
+          className={classes.instructions}
+          dangerouslySetInnerHTML={{
+            __html: meal.instructions,
+          }}
+        ></p>
+      </main> */}
+
+      <h1>this meal {"  " + meal.title}</h1>
     </>
   );
 }
